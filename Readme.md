@@ -118,7 +118,7 @@ The goal is to **train the brain in an enjoyable, interactive way** while reinfo
 **4️. Microsoft Certification**
 - Earn **Microsoft Applied Skills Certificate**.
 - **Concepts Implemented:**
-     **Microsoft Applied Skill** Certificate earned.
+     **Microsoft Applied Skill** Certificate .
 
 ---
 
