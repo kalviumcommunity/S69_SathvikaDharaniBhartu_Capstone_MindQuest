@@ -104,10 +104,14 @@ The goal is to **train the brain in an enjoyable, interactive way** while reinfo
 - **Concepts Implemented:**
       Used a testing framework (Jest).
       Implemented Dockerfile support.
+
+
 **2️. AI & LLM Features**
 - Implement **LLM-based AI autocomplete** for hints in quizzes.
 - **Concepts Implemented:**
       Implemented LLM/AI-autocomplete functionality.
+
+
 **3️. User Growth & Open Source Contributions**
 - Get **5+ active users**, then **10+ users**, then **50+ users**.
 - Receive **3 pull requests** from contributors (10+ lines each).
@@ -115,6 +119,8 @@ The goal is to **train the brain in an enjoyable, interactive way** while reinfo
 - **Concepts Implemented:**
       Project used by 50+ users.
       Received 3 PRs & submitted 3 PRs.
+
+      
 **4️. Microsoft Certification**
 - Earn **Microsoft Applied Skills Certificate**.
 - **Concepts Implemented:**
