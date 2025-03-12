@@ -8,6 +8,7 @@ app.get("/", (req, res) => {
     res.send("Mind Quest backend is running!");
 });
 
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
