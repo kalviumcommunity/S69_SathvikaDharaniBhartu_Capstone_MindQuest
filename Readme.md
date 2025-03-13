@@ -20,33 +20,54 @@ The goal is to **train the brain in an enjoyable, interactive way** while reinfo
  
 ### **KEY FEATURES:**
 
-**Mini-Games & Quizzes** – Users play memory, logic, and problem-solving games.
-**Critical thinking** – Thought-provoking puzzles & real-world scenarios.
-**Cognitive Tricks** – Learn mental shortcuts for faster thinking.
-**Memory Hacks** – Techniques to remember information efficiently.
-**Problem-Solving Challenges** – Puzzles and scenarios to enhance logical thinking.
-**Unlockable Fun Facts & Myths** – Completing quizzes reveals surprising brain facts.
-**Historical Insights** – Learn how famous thinkers used these techniques.
-**User Progress Tracking** – Users see their scores and improvements.
-**Authentication System** – Secure login with email and Google.
-**File Upload Functionality** – Users can upload their own problem-solving techniques.
-**Interactive UI with React Components** – Smooth and engaging interface.
-**Database & API Integration** – Stores user progress and quiz results.
+- **Mini-Games & Quizzes** – Users play memory, logic, and problem-solving games.
+
+- **Critical thinking** – Thought-provoking puzzles & real-world scenarios.
+
+- **Cognitive Tricks** – Learn mental shortcuts for faster thinking.
+
+- **Memory Hacks** – Techniques to remember information efficiently.
+
+- **Problem-Solving Challenges** – Puzzles and scenarios to enhance logical thinking.
+  
+- **Unlockable Fun Facts & Myths** – Completing quizzes reveals surprising brain facts.
+  
+- **Historical Insights** – Learn how famous thinkers used these techniques.
+  
+- **User Progress Tracking** – Users see their scores and improvements.
+
+- **Authentication System** – Secure login with email and Google.
+
+- **File Upload Functionality** – Users can upload their own problem-solving techniques.
+
+- **Interactive UI with React Components** – Smooth and engaging interface.
+
+- **Database & API Integration** – Stores user progress and quiz results.
 
 ---
 
 ### **TECHSTACK:** 
 
 **Frontend:** React.js, React Router, Tailwind CSS and HTML, CSS & JS(Additional customization if needed)
+
 **Backend:** Node.js, Express.js
+
 **Database:** MongoDB (Mongoose)
+
 **Authentication:** JWT, bcrypt (for username/password login), Google OAuth
+
 **API Testing:** Bruno/Postman
+
 **API & Data Handling:** Axios (for making requests), Open Trivia Database API (for quizzes)
+
 **Mini-Games & Cognitive Tricks:** JavaScript (basic logic-based games), Canvas API (for visual games like "Spot the Difference"), Phaser.js
+
 **User Progress Tracking:** MongoDB Aggregations (for storing quiz scores, game progress)
+
 **File Upload Functionality:** Multer (for handling uploads in Node.js)
+
 **Deployment:** Netlify/Vercel (Frontend), Render/Railway (Backend), MongoDB Atlas (Database)
+
 **Version Control & Project Management:** GitHub (for code), GitHub Projects (for tracking progress)
 
 ---
@@ -131,7 +152,14 @@ The goal is to **train the brain in an enjoyable, interactive way** while reinfo
  **Level 3 (Scaling & Open Concepts):**
 
  **1. Gamification Expansion:** Add XP, Badges & Streaks.
+ 
  **2. AI-Powered Personalized Learning.**
+ 
  **3. Multiplayer Brain Challenges.**
+ 
  **4. Collaborate with Experts & Educators.**
+
+---
+
+Backend Deployment link: https://s69-sathvikadharanibhartu-capstone-s706.onrender.com
 
