@@ -1,0 +1,11 @@
+const Progress = require("../models/Progress");
+
+
+exports.getUserProgress = async (req, res) => {
+    try {
+        const progress = await Progress.findOne({ userId: req.params.userId });
+        res.status(200).json(progress);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
+};
