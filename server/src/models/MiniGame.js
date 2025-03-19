@@ -14,6 +14,10 @@ const miniGameSchema = new mongoose.Schema({
         enum: ["easy", "medium", "hard"], 
         required: true 
     },
+    leaderboard: [{type: mongoose.Schema.Types.ObjectId, ref: "LeaderBoard"}],
+    progress: [{type: mongoose.Schema.Types.ObjectId, ref: "Progress"}],
+    submission: [{type: mongoose.Schema.Types.ObjectId, ref: "Submission"}],
+    user: [{type: mongoose.Schema.Types.ObjectId, ref: "User"}],
 },{timestamps: true});
 
 module.exports = mongoose.model("MiniGame", miniGameSchema);

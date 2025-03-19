@@ -6,9 +6,11 @@ const leaderBoardSchema = new mongoose.Schema({
         required: true
     },
     score: {
-        type: String,
+        type: Number,
         required: true,
     },
+    minigames: [{type: mongoose.Schema.Types.ObjectId, ref: "MiniGame"}],
+    user: [{type: mongoose.Schema.Types.ObjectId, ref: "User"}],
 },{timestamps: true});
 
 module.exports = mongoose.model("LeaderBoard", leaderBoardSchema);

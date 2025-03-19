@@ -13,7 +13,8 @@ exports.createQuestion = async (req, res) => {
 
 exports.getAllQuestions = async (req, res) => {
     try {
-        const questions = await Question.find();
+        const questions = await Question.find()
+        .populate("quizzes");
         res.status(200).json(questions);
     } catch (error) {
         res.status(500).json({ error: error.message });

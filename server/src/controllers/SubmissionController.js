@@ -12,7 +12,8 @@ exports.createSubmission = async (req, res) => {
 
 exports.getAllSubmissions = async (req, res) => {
     try {
-        const submissions = await Submission.find(); 
+        const submissions = await Submission.find()
+        .populate("user relatedId"); 
         res.status(200).json(submissions);
     } catch (error) {
         res.status(500).json({ error: error.message });
@@ -21,7 +22,8 @@ exports.getAllSubmissions = async (req, res) => {
 
 exports.getSubmissionsByUserId = async (req, res) => {
     try {
-        const submissions = await Submission.find({ userId: req.params.id });
+        const submissions = await Submission.find({ userId: req.params.id })
+        .populate("user relatedId");
         res.status(200).json(submissions);
     } catch (error) {
         res.status(500).json({ error: error.message });

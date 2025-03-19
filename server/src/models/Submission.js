@@ -22,6 +22,8 @@ const submissionSchema = new mongoose.Schema({
         type: Array,
         default: []
     },
+    user: [{type: mongoose.Schema.Types.ObjectId, ref: "User"}],
+    relatedId: [{type: mongoose.Schema.Types.ObjectId, required: true}] // Quizzes or MiniGames
 },{timestamps: true});
 
 
