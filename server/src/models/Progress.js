@@ -10,6 +10,9 @@ const progressSchema = new mongoose.Schema({
         type: Number,
         default: 0,
     },
+    achievements: [{type: mongoose.Schema.Types.ObjectId, ref: "Achievement"}],
+    minigames: [{type: mongoose.Schema.Types.ObjectId, ref: "MiniGame"}],
+    user: [{type: mongoose.Schema.Types.ObjectId, ref: "User"}],
 },{timestamps: true});
 
 module.exports = mongoose.model("Progress", progressSchema);

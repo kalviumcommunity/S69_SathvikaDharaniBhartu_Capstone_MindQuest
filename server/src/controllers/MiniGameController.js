@@ -18,7 +18,8 @@ exports.createMiniGame = async (req, res) => {
 
 exports.getAllMiniGames = async (req, res) => {
     try {
-        const games = await MiniGame.find();
+        const games = await MiniGame.find()
+        .populate("leaderboard progress submission user");
         res.status(200).json(games);
     } catch (error) {
         res.status(500).json({ error: error.message });
@@ -28,7 +29,8 @@ exports.getAllMiniGames = async (req, res) => {
 
 exports.getMiniGameById = async (req, res) => {
     try {
-        const game = await MiniGame.findById(req.params.id);
+        const game = await MiniGame.findById(req.params.id)
+        .populate("leaderboard progress submission user");
         if (!game) return res.status(404).json({ message: "Mini-game not found" });
 
         res.status(200).json(game);

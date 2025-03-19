@@ -14,7 +14,8 @@ exports.createComment = async (req, res) => {
 
 exports.getCommentsByPost = async (req, res) => {
     try {
-        const comments = await Comment.find({ postId: req.params.postId }); 
+        const comments = await Comment.find({ postId: req.params.postId })
+        .populate("user technique quiz submission"); 
         res.status(200).json(comments);
     } catch (error) {
         res.status(500).json({ error: error.message });

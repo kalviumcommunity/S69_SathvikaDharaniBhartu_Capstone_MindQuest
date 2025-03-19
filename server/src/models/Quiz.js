@@ -8,6 +8,9 @@ const quizSchema = new mongoose.Schema({
     description: {
         type: String
     },
+    questions: [{type: mongoose.Schema.Types.ObjectId, ref: "Question"}],
+    submission: [{type: mongoose.Schema.Types.ObjectId, ref: "Submission"}],
+    user: [{type: mongoose.Schema.Types.ObjectId, ref: "User"}],
 },{timestamps: true});
 
 

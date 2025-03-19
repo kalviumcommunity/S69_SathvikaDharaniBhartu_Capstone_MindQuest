@@ -18,7 +18,8 @@ exports.createTechnique = async (req, res) => {
 
 exports.getAllTechniques = async (req, res) => {
     try {
-        const techniques = await Technique.find();
+        const techniques = await Technique.find()
+        .populate("user comments fileuploads");
         res.status(200).json(techniques);
     } catch (error) {
         res.status(500).json({ error: error.message });
@@ -28,7 +29,8 @@ exports.getAllTechniques = async (req, res) => {
 
 exports.getTechniqueById = async (req, res) => {
     try {
-        const technique = await Technique.findById(req.params.id);
+        const technique = await Technique.findById(req.params.id)
+        .populate("user comments fileuploads");
         if (!technique) return res.status(404).json({ message: "Technique not found" });
 
         res.status(200).json(technique);

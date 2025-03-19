@@ -25,6 +25,15 @@ const userSchema = new mongoose.Schema({
     profilePricture: {
         type: String //profile picture URL
     },
+    achievements: [{type: mongoose.Schema.Types.ObjectId, ref: "Achievement"}],
+    comments: [{type: mongoose.Schema.Types.ObjectId, ref: "Comment"}],
+    leaderboard: {type: mongoose.Schema.Types.ObjectId, ref: "LeaderBoard"},
+    minigames: [{type: mongoose.Schema.Types.ObjectId, ref: "MiniGame"}],
+    notifications: [{type: mongoose.Schema.Types.ObjectId, ref: "Notification"}],
+    progress: {type: mongoose.Schema.Types.ObjectId, ref: "Progress"},
+    quizzes: [{type: mongoose.Schema.Types.ObjectId, ref: "Quiz"}],
+    submission: [{type: mongoose.Schema.Types.ObjectId, ref: "Submission"}],
+    technique: [{type: mongoose.Schema.Types.ObjectId, ref: "Technique"}]
 },{timestamps: true});
 
 

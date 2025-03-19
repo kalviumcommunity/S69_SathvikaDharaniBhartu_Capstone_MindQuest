@@ -13,6 +13,8 @@ const fileUploadSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    knowledge: [{type: mongoose.Schema.Types.ObjectId, ref: "Knowledge"}],
+    technique: [{type: mongoose.Schema.Types.ObjectId, ref: "Technique"},]
 },{timestamps: true});
 
 module.exports = mongoose.model("FileUpload", fileUploadSchema);

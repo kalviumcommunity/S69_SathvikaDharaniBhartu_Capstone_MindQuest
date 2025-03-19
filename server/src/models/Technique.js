@@ -12,6 +12,9 @@ const techniqueSchema = new mongoose.Schema({
     imageURL: {
         type: String
     },
+    comments: [{type: mongoose.Schema.Types.ObjectId, ref: "Comment"}],
+    fileuploads: [{type: mongoose.Schema.Types.ObjectId, ref: "FileUpload"}],
+    user: [{type: mongoose.Schema.Types.ObjectId, ref: "User"}]
 },{timestamps: true});
 
 
