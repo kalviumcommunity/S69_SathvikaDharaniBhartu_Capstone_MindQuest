@@ -12,6 +12,7 @@ exports.createComment = async (req, res) => {
 };
 
 
+// GET API
 exports.getCommentsByPost = async (req, res) => {
     try {
         const comments = await Comment.find({ postId: req.params.postId })

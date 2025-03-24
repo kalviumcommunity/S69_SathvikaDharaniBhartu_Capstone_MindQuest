@@ -1,6 +1,7 @@
 const Progress = require("../models/Progress");
 
 
+// GET API
 exports.getUserProgress = async (req, res) => {
     try {
         const progress = await Progress.findOne({ userId: req.params.userId })

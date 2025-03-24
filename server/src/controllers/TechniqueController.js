@@ -16,6 +16,7 @@ exports.createTechnique = async (req, res) => {
 };
 
 
+// GET API
 exports.getAllTechniques = async (req, res) => {
     try {
         const techniques = await Technique.find()
@@ -27,6 +28,7 @@ exports.getAllTechniques = async (req, res) => {
 };
 
 
+// GET API
 exports.getTechniqueById = async (req, res) => {
     try {
         const technique = await Technique.findById(req.params.id)

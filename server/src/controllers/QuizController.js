@@ -11,6 +11,7 @@ exports.createQuiz = async (req, res) => {
 };
 
 
+// GET API
 exports.getAllQuizzes = async (req, res) => {
     try {
         const quizzes = await Quiz.find()

@@ -11,6 +11,7 @@ exports.createQuestion = async (req, res) => {
 };
 
 
+// GET API
 exports.getAllQuestions = async (req, res) => {
     try {
         const questions = await Question.find()
