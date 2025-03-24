@@ -11,6 +11,7 @@ exports.createKnowledge = async (req, res) => {
     }
 };
 
+// GET API
 exports.getAllKnowledge = async (req, res) => {
     try {
         const knowledgeEntries = await Knowledge.find()
@@ -21,6 +22,7 @@ exports.getAllKnowledge = async (req, res) => {
     }
 };
 
+// GET API
 exports.getKnowledgeById = async (req, res) => {
     try {
         const knowledgeEntry = await Knowledge.findById(req.params.id)

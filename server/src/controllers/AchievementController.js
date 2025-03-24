@@ -1,6 +1,6 @@
 const Achievement = require("../models/Achievement");
 
-
+// GET API
 exports.getAllAchievements = async (req, res) => {
     try {
         const achievements = await Achievement.find()

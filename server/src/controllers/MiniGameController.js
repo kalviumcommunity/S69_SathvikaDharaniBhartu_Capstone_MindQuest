@@ -16,6 +16,7 @@ exports.createMiniGame = async (req, res) => {
 };
 
 
+// GET API
 exports.getAllMiniGames = async (req, res) => {
     try {
         const games = await MiniGame.find()
@@ -27,6 +28,7 @@ exports.getAllMiniGames = async (req, res) => {
 };
 
 
+// GET API
 exports.getMiniGameById = async (req, res) => {
     try {
         const game = await MiniGame.findById(req.params.id)

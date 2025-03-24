@@ -1,6 +1,7 @@
 const Leaderboard = require("../models/Leaderboard");
 
 
+// GET API
 exports.getLeaderboard = async (req, res) => {
     try {
         const leaderboard = await Leaderboard.find().sort({ score: -1 })

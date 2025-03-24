@@ -11,6 +11,7 @@ exports.createUser = async(req, res) => {
 };
 
 
+// GET API
 exports.getAllUsers = async (req, res) => {
     try{
         const users = await User.find()
@@ -30,6 +31,7 @@ exports.getAllUsers = async (req, res) => {
 };
 
 
+// GET API
 exports.getUserById = async(req, res) => {
     try{
         const user = await User.findById(req.params.id)

@@ -10,6 +10,8 @@ exports.createSubmission = async (req, res) => {
     }
 };
 
+
+// GET API
 exports.getAllSubmissions = async (req, res) => {
     try {
         const submissions = await Submission.find()
@@ -20,6 +22,8 @@ exports.getAllSubmissions = async (req, res) => {
     }
 };
 
+
+// GET API
 exports.getSubmissionsByUserId = async (req, res) => {
     try {
         const submissions = await Submission.find({ userId: req.params.id })
