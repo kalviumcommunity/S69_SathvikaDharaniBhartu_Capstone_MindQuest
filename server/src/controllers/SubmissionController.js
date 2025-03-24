@@ -35,6 +35,7 @@ exports.getSubmissionsByUserId = async (req, res) => {
     }
 };
 
+// PUT API
 exports.updateSubmission = async (req, res) => {
     try {
         const updatedSubmission = await Submission.findByIdAndUpdate(req.params.id, req.body, { new: true });
