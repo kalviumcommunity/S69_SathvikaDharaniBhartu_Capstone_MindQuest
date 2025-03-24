@@ -1,5 +1,6 @@
 const Submission = require("../models/Submission.js"); 
 
+// POST API
 exports.createSubmission = async (req, res) => {
     try {
         const newSubmission = new Submission(req.body);

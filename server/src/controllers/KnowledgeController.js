@@ -1,6 +1,7 @@
 const Knowledge = require("../models/Knowledge");
 
 
+// POST API
 exports.createKnowledge = async (req, res) => {
     try {
         const newKnowledge = new Knowledge(req.body);

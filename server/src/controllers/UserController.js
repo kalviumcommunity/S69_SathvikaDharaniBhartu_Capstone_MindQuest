@@ -1,5 +1,6 @@
 const User = require("../models/User");
 
+// POST API
 exports.createUser = async(req, res) => {
     try{
         const newUser = new User(req.body);

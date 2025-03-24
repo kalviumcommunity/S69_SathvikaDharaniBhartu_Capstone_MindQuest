@@ -1,5 +1,6 @@
 const Question = require("../models/Question");
 
+// POST API
 exports.createQuestion = async (req, res) => {
     try {
         const newQuestion = new Question(req.body);

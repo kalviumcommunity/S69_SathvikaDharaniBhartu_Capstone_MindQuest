@@ -1,6 +1,6 @@
 const Technique = require("../models/Technique");
 
-
+// POST API
 exports.createTechnique = async (req, res) => {
     try {
         // if (req.user.role !== "admin") {
