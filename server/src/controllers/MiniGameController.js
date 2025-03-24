@@ -1,6 +1,7 @@
 const MiniGame = require("../models/MiniGame");
 
 
+// POST API
 exports.createMiniGame = async (req, res) => {
     try {
         //  if (req.user.role !== "admin") {

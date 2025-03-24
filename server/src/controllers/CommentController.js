@@ -1,6 +1,6 @@
 const Comment = require("../models/Comment");
 
-
+// POST API
 exports.createComment = async (req, res) => {
     try {
         const newComment = new Comment(req.body);
