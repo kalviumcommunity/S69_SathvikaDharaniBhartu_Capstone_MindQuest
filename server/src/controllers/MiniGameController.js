@@ -43,6 +43,7 @@ exports.getMiniGameById = async (req, res) => {
 };
 
 
+// PUT API
 exports.updateMiniGame = async (req, res) => {
     try {
         // if (req.user.role !== "admin") {

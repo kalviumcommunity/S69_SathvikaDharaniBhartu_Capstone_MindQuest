@@ -24,6 +24,7 @@ exports.getCommentsByPost = async (req, res) => {
 };
 
 
+// PUT API
 exports.updateComment = async (req, res) => {
     try {
         const comment = await Comment.findById(req.params.id);

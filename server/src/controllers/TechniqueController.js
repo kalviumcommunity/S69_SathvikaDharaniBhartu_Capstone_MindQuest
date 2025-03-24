@@ -42,6 +42,7 @@ exports.getTechniqueById = async (req, res) => {
 };
 
 
+// PUT API
 exports.updateTechnique = async (req, res) => {
     try {
         // if (req.user.role !== "admin") {
