@@ -1,0 +1,19 @@
+meta {
+  name: POST API
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:5000/api/techniques/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "title" : "MindMapping",
+    "description" : "Helps to divide concepts into main topics , sub topics so that it makes it easy to learn",
+    "imageURL" : "ndhhifebewgnj"
+  }
+}
