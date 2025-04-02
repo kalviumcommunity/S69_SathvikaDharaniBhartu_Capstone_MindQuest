@@ -163,3 +163,5 @@ The goal is to **train the brain in an enjoyable, interactive way** while reinfo
 
 Backend Deployment link: https://s69-sathvikadharanibhartu-capstone-s706.onrender.com
 
+Frontend Deployment link: https://mq-mindquest.netlify.app/
+
